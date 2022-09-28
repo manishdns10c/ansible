@@ -32,7 +32,6 @@
   template:
     src: standalone.xml
     dest: /usr/share/jboss-as/standalone/configuration/
-  notify: restart jboss
   become: yes
 - name: Add group "jboss"
   group:
