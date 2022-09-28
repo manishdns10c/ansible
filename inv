@@ -1,1 +1,2 @@
-localhost  ansible_connection=local 
+localhost  ansible_connection=local
+18.189.31.95 ansible_connection=ssh  ansible_user=ec2-user ansible_password=123456 
