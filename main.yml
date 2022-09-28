@@ -3,5 +3,5 @@
    vars_files: 
      -  variables.yml
    roles: 
-     - nginx
-     - jboss
+     - { role: nginx, when: install_nginx == true }
+     - { role: jboss, when: install_jboss == true }
