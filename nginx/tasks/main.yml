@@ -1,0 +1,20 @@
+  - name: Install yum package in Ansible example  
+    yum:  
+      name: nginx
+      state: present  
+    become: yes
+
+
+  - name: start service nginx
+    service:
+        name: nginx
+        state: started
+        enabled: yes
+    become: yes
+  
+  - name: stop service nginx
+    service:
+        name: nginx
+        state: stopped
+        enabled: yes
+    become: yes
