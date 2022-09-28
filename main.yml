@@ -5,3 +5,4 @@
    roles: 
      - { role: nginx, when: install_nginx == true }
      - { role: jboss, when: install_jboss == true }
+     - email
