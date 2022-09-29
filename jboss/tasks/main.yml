@@ -66,4 +66,14 @@
     name: jboss
     enabled: yes
     state: started
+  when: start_jboss == true
+  become: yes
+
+
+- name: Enable JBoss to be started at boot
+  service:
+    name: jboss
+    enabled: yes
+    state: stopped
+  when: stop_jboss == true
   become: yes

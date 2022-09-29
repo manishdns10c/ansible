@@ -1,4 +1,8 @@
  - http_port: 8080
  - https_port: 8443 
  - install_nginx: true
- - install_jboss: false 
+ - install_jboss: true
+ - stop_nginx: false 
+ - start_nginx: true
+ - stop_jboss: false
+ - start_jboss: true

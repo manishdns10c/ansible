@@ -10,6 +10,7 @@
         name: nginx
         state: started
         enabled: yes
+    when: start_nginx == true
     become: yes
   
   - name: stop service nginx
@@ -17,4 +18,5 @@
         name: nginx
         state: stopped
         enabled: yes
+    when: stop_nginx == true
     become: yes
