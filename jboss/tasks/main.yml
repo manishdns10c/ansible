@@ -76,4 +76,7 @@
     enabled: yes
     state: stopped
   when: stop_jboss == true
+  notify: 
+     - Sending email to notify
   become: yes
+  
