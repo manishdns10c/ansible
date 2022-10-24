@@ -1,2 +1,11 @@
 ---
-# handlers file for nginx
+- name: Sending email to notify
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: username@gmail.com
+    password: your-password
+    to: xyz@gmail.com
+    subject: Ansible Report
+    body: services have been installed
+  delegate_to: localhost
